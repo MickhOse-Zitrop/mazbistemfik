@@ -1,0 +1,21 @@
+.main {
+    margin-top: 100px;
+    margin-left: 78px;
+    position: absolute;
+    right: 0;
+    width: calc(100% - 78px);
+    transition: 300ms ease-in-out;
+}
+
+.main.open {
+    width: calc(100% - 240px);
+}
+
+.main-container {
+    margin: 0 auto;
+    padding: 15px 25px;
+    min-height: calc(100vh - 100px);
+    width: 60%;
+    /* display: flex;
+    flex-direction: column; */
+}

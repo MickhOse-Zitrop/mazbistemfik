@@ -1,0 +1,124 @@
+.sidebar {
+    padding: 21px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 78px;
+    background-color: #dedede;
+    transition: 300ms ease-in-out;
+    white-space: nowrap;
+    user-select: none;
+    z-index: 100;
+}
+
+.sidebar.full {
+    width: 240px;
+}
+
+.sidebar.scroll {
+    top: 100px;
+    height: calc(100% - 100px);
+}
+
+.sidebar.full .sidebar-navigation-item-link-text {
+    display: block;
+}
+
+.sidebar.full .sidebar-title-text {
+    display: block;
+}
+
+.sidebar-title {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    transition: 300ms ease-in-out;
+}
+
+.sidebar-title-text {
+    display: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sidebar-title-handle {
+    min-width: 50px;
+    font-size: inherit;
+    background: none;
+    cursor: pointer;
+}
+
+.fa-bars {
+    transform: rotate(0deg);
+    transition: 300ms ease-in-out;
+}
+
+.fa-xmark {
+    transform: rotate(360deg);
+    transition: 300ms ease-in-out;
+}
+
+.sidebar-navigation-item {
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+}
+
+.sidebar-navigation-item-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #000;
+    border-radius: 12px;
+    transition: 150ms ease-in-out;
+    cursor: pointer;
+}
+
+.sidebar-navigation-item-link.active,
+.sidebar-navigation-item-link:hover {
+    color: #fff;
+    background-color: #11101d;
+}
+
+.sidebar-navigation-item-link:hover+.sidebar-navigation-item-span {
+    top: 50%;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.sidebar-navigation-item-link i {
+    min-width: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.sidebar-navigation-item-link-text {
+    display: none;
+}
+
+.sidebar-navigation-item-span {
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 122px;
+    height: 35px;
+    width: 122px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    background-color: #11101d;
+    border-radius: 12px;
+    transform: translate(-50%, -50%);
+    transition: 300ms ease-in-out;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 100;
+}

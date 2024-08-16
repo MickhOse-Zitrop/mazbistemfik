@@ -1,0 +1,61 @@
+.founders {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.founders-block {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    transition: 300ms ease-in-out;
+}
+
+.founders-block:hover {
+    transform: translate(0, 10px);
+}
+
+.founders:hover .founders-block:not(:hover) {
+    opacity: 0.5;
+}
+
+.founders-block:hover .founders-content {
+    height: 45%;
+    opacity: 1;
+}
+
+.founders-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    font-size: 44px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 300ms ease-in-out;
+    opacity: 0;
+}
+
+.founders-image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.8);
+}
+
+.founders-image img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
