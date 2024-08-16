@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import icon from '/images/icon.png';
+
 import './Header.css';
 
 export default function Header({ header, setHeaderSide }) {
@@ -61,7 +63,7 @@ export default function Header({ header, setHeaderSide }) {
             <div className="header-image" onClick={() => navigate('/')}>
                 <img
                     className="header-image-link-image"
-                    src="/images/icon.png"
+                    src={icon}
                     alt="Image"
                 />
             </div>

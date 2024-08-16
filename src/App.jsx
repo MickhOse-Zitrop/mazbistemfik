@@ -27,7 +27,8 @@ export default function App() {
                     <Route path="*" element={<Main />} />
                 </Route>
             </>
-        )
+        ),
+        { basename: '/mazbistemfik' }
     );
 
     return <RouterProvider router={router} />;

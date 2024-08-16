@@ -27,12 +27,12 @@ export const pages = [{
 
 export const videos = [{
     id: 'https://www.youtube.com/watch?v=spcsXjOciuc&t',
-    image: '/images/video8.jpg',
+    image: 'mazbistemfik/images/video8.jpg',
     title: 'VLOG: We are spending the weekend',
     text: 'The new video is already on the channel! In this video we show our weekend. We hope for your support (well, likes and subscriptions 👍), and meet new content very soon!'
 }, {
     id: 'https://www.youtube.com/watch?v=X4OyaWqCLoE&t',
-    image: '/images/video7.jpg',
+    image: 'mazbistemfik/images/video7.jpg',
     title: 'VLOG: A new person has come to us',
     text: 'And here\'s a new video! And the one you\'ve never heard of and, of course, whom you haven\'t seen yet came to us. It is in this video that you will learn about him and how we spent time. After viewing, you can like and subscribe :)'
 }, {
