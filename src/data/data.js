@@ -27,7 +27,7 @@ export const pages = [{
 
 export const videos = [{
     id: 'https://www.youtube.com/watch?v=spcsXjOciuc&t',
-    image: 'mazbistemfik/images/video8.jpg',
+    image: 'images/video8.jpg',
     title: 'VLOG: We are spending the weekend',
     text: 'The new video is already on the channel! In this video we show our weekend. We hope for your support (well, likes and subscriptions 👍), and meet new content very soon!'
 }, {
