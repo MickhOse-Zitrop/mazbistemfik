@@ -12,6 +12,15 @@ export default function Person() {
         });
     }, []);
 
+    var l = window.location;
+    console.log(
+        l.protocol +
+            '//' +
+            l.hostname +
+            (l.port ? ':' + l.port : '') +
+            l.pathname
+    );
+
     return (
         <div className="main-page">
             <div className="main-page-block">

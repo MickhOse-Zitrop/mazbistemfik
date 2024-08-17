@@ -11,8 +11,7 @@ export default function Header({ header, setHeaderSide }) {
 
     var headerTitle = 'Main';
     const indexOfSlash = () => {
-        let slash = header.slice(1, header.length).indexOf('/') + 1;
-
+        let slash = header.slice(14, header.length).indexOf('/') + 14;
         if (slash) {
             return slash;
         } else {
@@ -21,7 +20,7 @@ export default function Header({ header, setHeaderSide }) {
     };
 
     if (header != '/mazbistemfik/' && header != '/mazbistemfik')
-        switch (header.slice(0, indexOfSlash())) {
+        switch (header.slice(13, indexOfSlash())) {
             case '/':
                 headerTitle = 'Main';
                 break;
