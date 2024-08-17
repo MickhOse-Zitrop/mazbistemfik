@@ -1,14 +1,24 @@
 import { useParams } from 'react-router-dom';
-import { founders } from '../data/data';
+import { members } from '../data/data';
+import { useEffect, useState } from 'react';
 
 export default function Person() {
     const { person } = useParams();
+    const [currentPerson, setCurrentPerson] = useState({});
+
+    useEffect(() => {
+        members.map((member) => {
+            if (member.id == person) setCurrentPerson(member);
+        });
+    }, []);
 
     return (
         <div className="main-page">
             <div className="main-page-block">
                 <div className="main-page-block-content">
-                    <h2 className="main-page-block-title">{person}</h2>
+                    <h2 className="main-page-block-title">
+                        {currentPerson.title}
+                    </h2>
                     <p className="main-page-block-text">
                         The Mazbistemifk gang was created on 18.07.2018. The
                         founders of the gang were Adeyl, Big Sloune, Kary,

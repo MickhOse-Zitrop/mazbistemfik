@@ -20,9 +20,7 @@ export default function Header({ header, setHeaderSide }) {
         }
     };
 
-    console.log(header);
-
-    if (header != '/mazbistemfik/')
+    if (header != '/mazbistemfik/' && header != '/mazbistemfik')
         switch (header.slice(0, indexOfSlash())) {
             case '/':
                 headerTitle = 'Main';
