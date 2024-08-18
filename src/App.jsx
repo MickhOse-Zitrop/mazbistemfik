@@ -1,8 +1,8 @@
 import {
     RouterProvider,
     Route,
-    createBrowserRouter,
     createRoutesFromElements,
+    createHashRouter,
 } from 'react-router-dom';
 
 import Layout from './components/Layout/Layout';
@@ -13,7 +13,7 @@ import Person from './pages/Person';
 import Members from './pages/Members/Members';
 
 export default function App() {
-    const router = createBrowserRouter(
+    const router = createHashRouter(
         createRoutesFromElements(
             <>
                 <Route path="/" element={<Layout />}>
@@ -27,8 +27,8 @@ export default function App() {
                     <Route path="*" element={<Main />} />
                 </Route>
             </>
-        ),
-        { basename: '/mazbistemfik' }
+        )
+        // { basename: '/mazbistemfik' }
     );
 
     return <RouterProvider router={router} />;
